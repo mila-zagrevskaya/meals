@@ -7,7 +7,7 @@ body {
 .wrapper {
 	max-width: 1180px;
 	padding: 10px;
-	margin: 10px auto;
+	margin: 5px auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -34,6 +34,16 @@ h1, h2 {
 	flex-direction: row;
 	justify-content: center;
 }
+.revers {
+	flex-direction: row-reverse;
+}
+.revers .text {
+	left: 0;
+	box-shadow: 7px 4px 20px 3px #d8e3e8;
+}
+.revers .pict {
+	margin-left: -5%;
+}
 .pict {
 	display: block;
 	width: 50%;
@@ -44,11 +54,10 @@ h1, h2 {
 	overflow: hidden;
 	background-color: #f6fcff;
 	min-width: calc( 50% + 82px);
-	height: 300px;
 	position: relative;
 	top: 40px;
 	left: -5%;
-	height: 300px;
+	min-height: 300px;
 	box-shadow: -7px 4px 20px 3px #d8e3e8;
 	padding: 38px 60px;
 	font-size: 18px;
@@ -83,21 +92,11 @@ h3 {
 	background-color: #fff;
 	border: 1px solid #97b621;
 }
-.revers {
-	flex-direction: row-reverse;
-}
-.revers .text {
-	left: 0;
-	box-shadow: 7px 4px 20px 3px #d8e3e8;
-}
-.revers .pict {
-	margin-left: -5%;
-}
 .btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 55px;
+	margin: 20px;
 }
 .more {
 	position: relative;
@@ -127,7 +126,7 @@ h3 {
 }
 .footer {
 	background-color: #f7f9ee;
-	margin: 10px 0;
+	margin: 5px 0;
 	padding: 30px 5px;
 }
 
@@ -205,10 +204,6 @@ h3 {
 }
 
 
-
-
-
-
 /*--------*/
 @media (max-width: 768px) {
 	.container,
@@ -224,10 +219,21 @@ h3 {
 	}
 	.text,
 	.revers .text {
-		max-width: 50%;
+		width: 100%;
 		position: static;
 		left: 0;
+		min-height: 300px;
+		padding: 38px 30px;
 		box-shadow: 0px 4px 20px 3px #d8e3e8;
+	}
+	.pict {
+		display: block;
+		width: 100%;
+		margin: 0px;
+		margin-left: 0%;
+	}
+	.revers .pict {
+		margin-left: 0%;
 	}
 
 }
