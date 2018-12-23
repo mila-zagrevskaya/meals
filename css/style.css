@@ -170,6 +170,7 @@ h3 {
 .footer .detail {
 	width: 70%;
 	height: 40px;
+	margin: 10px;
 
 }
 .item {
@@ -238,5 +239,11 @@ h3 {
 	}
 	.detail {
 		margin: 50px auto 15px;
+	}
+	.more {
+		margin: 15px;
+	}
+	.footer .detail {
+		margin: 15px;
 	}
 }
